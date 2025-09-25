@@ -82,3 +82,60 @@
       color: #fff; float: right; font-size: 28px;
       font-weight: bold; cursor: pointer;
     }
+    /* Responsive Styles */
+@media (max-width: 1024px) {
+  #wrapper {
+    margin: 20px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  #movie-list ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .actions {
+    margin-top: 8px;
+    gap: 20px;
+  }
+
+  #add-movie {
+    width: 90%;
+  }
+
+  #add-movie input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #add-movie button {
+    width: 100%;
+  }
+
+  .modal-content iframe {
+    width: 90vw;
+    height: 50vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #page-banner h1 {
+    font-size: 20px;
+  }
+
+  #movie-list ul li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .icon-btn {
+    font-size: 20px;
+  }
+
+  .modal-content iframe {
+    width: 95vw;
+    height: 40vh;
+  }
+}
